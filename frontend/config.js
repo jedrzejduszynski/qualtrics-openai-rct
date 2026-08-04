@@ -1,5 +1,5 @@
 window.RCT_CONFIG = Object.freeze({
-  workerBaseUrl: "https://REPLACE-WITH-YOUR-WORKER.workers.dev",
+  workerBaseUrl: "https://creativity-study-api.jedrzejduszynski.workers.dev",
   taskId: "main",
   maxPrompts: 20,
   interfaceTitle: "AI creativity assistant",
