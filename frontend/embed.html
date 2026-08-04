@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>AI creativity assistant</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="chat-shell" aria-label="AI creativity assistant">
+    <header class="chat-header">
+      <h1 id="chat-title">AI creativity assistant</h1>
+      <p id="welcome-text">Use the assistant to support your work on the task.</p>
+    </header>
+    <div id="status" class="status-row" aria-live="polite"></div>
+    <section id="messages" class="messages" aria-live="polite" aria-label="Conversation"></section>
+    <div class="composer">
+      <textarea id="chat-input" maxlength="10000" aria-label="Message to assistant"></textarea>
+      <button id="send-button" class="send-button" type="button">Send</button>
+    </div>
+    <div class="footer-note">Press Enter to send. Use Shift+Enter for a new line.</div>
+  </main>
+  <script src="./config.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
