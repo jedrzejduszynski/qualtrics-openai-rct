@@ -1,6 +1,6 @@
 Qualtrics.SurveyEngine.addOnload(function () {
   var qThis = this;
-  var EXPECTED_ORIGIN = "https://REPLACE-WITH-YOUR-PAGES-SITE.pages.dev";
+  var EXPECTED_ORIGIN = "https://jedrzejduszynski.github.io";
   var REQUIRE_ONE_SUCCESSFUL_RESPONSE = false;
   var iframe = document.getElementById("rct-chat-frame");
 
