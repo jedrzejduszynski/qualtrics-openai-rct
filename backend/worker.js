@@ -216,7 +216,7 @@ async function chat(request, env, corsHeaders) {
   const taskId = cleanString(body.task_id, 50) || "main";
   const taskContext = TASK_CONTEXTS[taskId] || TASK_CONTEXTS.main;
   const model = String(env.OPENAI_MODEL || "gpt-5.6-luna");
-  const maxOutputTokens = clampInteger(env.MAX_OUTPUT_TOKENS, 100, 2000, 700);
+  const maxOutputTokens = 16000;
   const maxPrompts = 500;
   const instructions = `${SYSTEM_PROMPTS[payload.arm]}\n\nResearcher-provided task context:\n${taskContext}`;
 
