@@ -217,7 +217,7 @@ async function chat(request, env, corsHeaders) {
   const taskContext = TASK_CONTEXTS[taskId] || TASK_CONTEXTS.main;
   const model = String(env.OPENAI_MODEL || "gpt-5.6-luna");
   const maxOutputTokens = clampInteger(env.MAX_OUTPUT_TOKENS, 100, 2000, 700);
-  const maxPrompts = clampInteger(env.MAX_PROMPTS, 1, 100, 50);
+  const maxPrompts = 500;
   const instructions = `${SYSTEM_PROMPTS[payload.arm]}\n\nResearcher-provided task context:\n${taskContext}`;
 
   // Atomic assignment of the next turn number, with a server-side prompt cap.
