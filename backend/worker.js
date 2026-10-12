@@ -514,7 +514,7 @@ async function insertEvent(env, conversationId, turnId, eventType, metadataJson,
 function sanitizeMessages(messages) {
   if (!Array.isArray(messages)) return [];
   return messages
-    .slice(-30)
+    .slice(-100)
     .filter((message) => message && (message.role === "user" || message.role === "assistant"))
     .map((message) => ({
       role: message.role,
